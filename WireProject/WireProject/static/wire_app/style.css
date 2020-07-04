@@ -1,0 +1,17 @@
+.textspan {
+        float: left;
+        margin-right: 6px;
+        margin-top: -30px;
+        position: relative;
+        z-index: 2;
+        width:7%
+    }
+
+.background{
+  height:800px;
+  display:flex;
+  align-items:center;
+  background: url('images/Shopping.jpg') no-repeat center center;
+  background-size:cover;
+  margin:100px 0px;
+}

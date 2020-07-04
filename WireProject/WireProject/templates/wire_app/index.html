@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WireFrame Demo</title>
+    {% load static%}
+
+    <!-- Latest compiled and minified CSS -->
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+    <link rel="stylesheet" type="text/css" href = '{% static "wire_app/style.css" %}'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+<br/>
+<div class="container">
+    <div class="row">
+    <div class="col-sm-8">
+    <div class="input-group" style="width:100%">
+            <input name="search" class="form-control" placeholder="" type="text">
+            <select class="textspan">
+                <option value="">All</option>
+            </select>
+            <span class="input-group-btn">
+                <button class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+            </span>
+    </div>
+    </div>
+    </div>
+    <br/>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <ul class="nav navbar-nav">
+       <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Departments
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Casual Wear</a></li>
+          <li><a href="#">Ethnic Wear</a></li>
+          <li><a href="#">Formal Wear</a></li>
+
+        </ul>
+      </li>
+    <li><a href="#">Account</a></li>
+    <li><a href="#">Deals</a></li>
+    <li><a href="#">Registry</a></li>
+    <li><a href="#">Sell</a></li>
+    <li><a href="#">Help</a></li>
+      </ul>
+        <ul style="float:right" class="nav navbar-nav">
+     <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Sign In
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Gmail</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Email</a></li>
+
+        </ul>
+      </li>
+      <li><a href="#">Cart<i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
+
+
+
+    </nav>
+    <br/>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="jumbotron background">
+
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-3">
+            <ul class="list-group">
+                <li class="list-group-item" style="border: none"><b>Welcome</b></li>
+                <li class="list-group-item" style="border: none">
+                    <button class="btn btn-danger" style="width:200px">Sign In</button>
+                </li>
+                <li class="list-group-item" style="border: none">
+                    <button class="btn btn-danger" style="width:200px">Create Account</button>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-3">
+            <ul class="list-group">
+                <li class="list-group-item" style="border: none"><b>Popular Departments</b></li>
+                <li class="list-group-item" style="border: none">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <img src='{% static "wire_app/images/casual1.jpg" %}' alt="Casual1"
+                                     width="75" height="75"/>
+                            </div>
+                            <div class="col-sm-1">
+                                <img src='{% static "wire_app/images/casual2.jpg" %}' alt="Casual2"
+                                     width="75" height="75"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <img src='{% static "wire_app/images/ethnic1.jpg" %}' alt="Ethnic1"
+                                     width="75" height="75"/>
+                            </div>
+                            <div class="col-sm-1">
+                                <img src='{% static "wire_app/images/ethnic2.jpg" %}' alt="Ethnic2"
+                                     width="75" height="75"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <img src='{% static "wire_app/images/formal1.jpg" %}' alt="Formal1"
+                                     width="75" height="75"/>
+                            </div>
+                            <div class="col-sm-1">
+                                <img src='{% static "wire_app/images/formal2.jpg" %}' alt="Formal2"
+                                     width="75" height="75"/>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-3">
+            <ul class="list-group">
+                <li class="list-group-item" style="border: none"><b>Clothing</b></li>
+                <li class="list-group-item" style="border: none">
+                    <img src='{% static "wire_app/images/cloth.jpg" %}' alt="Clothes"
+                                     width="200" height="200"/>
+                </li>
+                <li class="list-group-item" style="border: none">
+                    <button class="btn btn-danger" style="width:200px">Shop Clothing</button>
+                </li>
+
+            </ul>
+        </div>
+        <div class="col-sm-3">
+            <ul class="list-group">
+                <li class="list-group-item" style="border: none"><b>Deals</b></li>
+                <li class="list-group-item" style="border: none">
+                    <img src='{% static "wire_app/images/deals.jpg" %}' alt="Deals"
+                                     width="200" height="160"/>
+                </li>
+                <li class="list-group-item" style="border: none">Price</li>
+                <li class="list-group-item" style="border: none">
+                    <button class="btn btn-danger" style="width:200px">Shop Deals</button>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-12">
+            <button class="btn btn-danger" style="width:100%">Return To Top</button>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row">
+        <div class="col-sm-3">
+            <ul class="list-group">
+                <li class="list-group-item" style="border: none"><b>About</b></li>
+                <li class="list-group-item" style="border: none">Lorem</li>
+                <li class="list-group-item" style="border: none">Ipsum</li>
+                <li class="list-group-item" style="border: none">Dolor</li>
+            </ul>
+        </div>
+        <div class="col-sm-3">
+            <ul class="list-group">
+                <li class="list-group-item" style="border: none"><b>Jobs</b></li>
+                <li class="list-group-item" style="border: none">Lorem</li>
+                <li class="list-group-item" style="border: none">Ipsum</li>
+                <li class="list-group-item" style="border: none">Dolor</li>
+            </ul>
+        </div>
+        <div class="col-sm-3">
+            <ul class="list-group">
+                <li class="list-group-item" style="border: none"><b>Payment Products</b></li>
+                <li class="list-group-item" style="border: none">Lorem</li>
+                <li class="list-group-item" style="border: none">Ipsum</li>
+                <li class="list-group-item" style="border: none">Dolor</li>
+            </ul>
+        </div>
+        <div class="col-sm-3">
+            <ul class="list-group">
+                <li class="list-group-item" style="border: none"><b>Help</b></li>
+                <li class="list-group-item" style="border: none">Lorem</li>
+                <li class="list-group-item" style="border: none">Ipsum</li>
+                <li class="list-group-item" style="border: none">Dolor</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
